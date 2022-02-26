@@ -9,8 +9,7 @@ Contents
     - sat_smt               - SAT experiments (sat-l, sat-r, sat-r+) and SMT experiments (smt-l, smt-r, smt-r+).
         - results           - Summary of the experiments.
         - run               - Experiments source code and raw results.
-- instances                 - All level and their PDDL models.
-    - levels                - All game levels and some toy instances.
+- instances                 - All game levels and some toy instances.
 - pddl                      - PDDL models (Problems and Instances files) for each provided instance.
     - basic-adl             - Normal model instances.
         - domains           - Domains for each number of snowmen.
