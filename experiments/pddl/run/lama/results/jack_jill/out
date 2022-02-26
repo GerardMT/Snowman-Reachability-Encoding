@@ -1,0 +1,42 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 3599.96s
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 /lustre/home/sc061/jea20/git/downward/builds/release/bin/translate/translate.py ../../instances/jack_jill/domain.pddl ../../instances/jack_jill/problem.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.114s wall-clock]
+Normalizing task... [0.000s CPU, 0.002s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.023s wall-clock]
+Preparing model... [0.000s CPU, 0.004s wall-clock]
+Generated 157 rules.
+Computing model... [30.140s CPU, 30.235s wall-clock]
+2353337 relevant atoms
+9740 auxiliary atoms
+2363077 final queue length
+4716453 total queue pushes
+Completing instantiation... [36.990s CPU, 37.098s wall-clock]
+Instantiating: [68.070s CPU, 68.308s wall-clock]
+Computing fact groups...
+Finding invariants...
+16 initial candidates
+Finding invariants: [2.250s CPU, 2.258s wall-clock]
+Checking invariant weight... [0.010s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.001s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.001s wall-clock]
+Choosing groups...
+864 uncovered facts
+Choosing groups: [0.000s CPU, 0.001s wall-clock]
+Building translation key... [0.000s CPU, 0.005s wall-clock]
+Computing fact groups: [2.270s CPU, 2.279s wall-clock]
+Building STRIPS to SAS dictionary... [0.010s CPU, 0.002s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.080s CPU, 0.072s wall-clock]
+Translator axioms removed by simplifying: 2648
+Computing negative axioms... 

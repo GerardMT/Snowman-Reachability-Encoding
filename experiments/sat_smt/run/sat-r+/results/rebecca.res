@@ -1,0 +1,3 @@
+solved=true
+solvingTime=1.6193058490753173828125
+nActions=6

@@ -1,0 +1,99 @@
+Timesteps: 1 sat: false Time: 0.451713614 TotalTime: 0.452709859 (REAL s)
+Timesteps: 2 sat: false Time: 0.15049227 TotalTime: 0.642237073 (REAL s)
+Timesteps: 3 sat: false Time: 0.162446141 TotalTime: 0.804825479 (REAL s)
+Timesteps: 4 sat: false Time: 0.20706757 TotalTime: 1.01202009 (REAL s)
+Timesteps: 5 sat: false Time: 0.255566098 TotalTime: 1.267740606 (REAL s)
+Timesteps: 6 sat: false Time: 0.263836863 TotalTime: 1.531725417 (REAL s)
+Timesteps: 7 sat: false Time: 0.167533537 TotalTime: 1.699400583 (REAL s)
+Timesteps: 8 sat: false Time: 0.184044086 TotalTime: 1.883739208 (REAL s)
+Timesteps: 9 sat: false Time: 0.256726441 TotalTime: 2.140676144 (REAL s)
+Timesteps: 10 sat: true Time: 0.479619594 TotalTime: 2.620413058 (REAL s)
+
+S 0        Snow       Reachable
+-#####-    -------    -------
+#.....#    -11111-    -11111-
+#.4#3.#    -1---1-    -10-01-
+#..p..#    -11111-    -01111-
+-#####-    -------    -------
+
+S 1        Snow       Reachable
+-#####-    -------    -------
+#.4...#    -10111-    -10111-
+#.q#3.#    -1---1-    -11-01-
+#.....#    -11111-    -11111-
+-#####-    -------    -------
+
+S 2        Snow       Reachable
+-#####-    -------    -------
+#.q4..#    -10011-    -01011-
+#.'#3.#    -1---1-    -01-01-
+#.....#    -11111-    -01111-
+-#####-    -------    -------
+
+S 3        Snow       Reachable
+-#####-    -------    -------
+#.'q4.#    -10001-    -11101-
+#.'#3.#    -1---1-    -11-01-
+#.....#    -11111-    -11111-
+-#####-    -------    -------
+
+S 4        Snow       Reachable
+-#####-    -------    -------
+#.'4q.#    -10001-    -11011-
+#.'#3.#    -1---1-    -11-01-
+#.....#    -11111-    -11111-
+-#####-    -------    -------
+
+S 5        Snow       Reachable
+-#####-    -------    -------
+#.'41.#    -10001-    -10001-
+#.'#2.#    -1---1-    -10-01-
+#...p.#    -11111-    -11111-
+-#####-    -------    -------
+
+S 6        Snow       Reachable
+-#####-    -------    -------
+#.'5q.#    -10001-    -11011-
+#.'#2.#    -1---1-    -11-01-
+#.....#    -11111-    -11111-
+-#####-    -------    -------
+
+S 7        Snow       Reachable
+-#####-    -------    -------
+#.14q.#    -10001-    -10011-
+#.'#2.#    -1---1-    -11-01-
+#.....#    -11111-    -11111-
+-#####-    -------    -------
+
+S 8        Snow       Reachable
+-#####-    -------    -------
+#.142.#    -10001-    -00001-
+#.'#q.#    -1---1-    -01-11-
+#.....#    -11111-    -11111-
+-#####-    -------    -------
+
+S 9        Snow       Reachable
+-#####-    -------    -------
+#.16q.#    -10001-    -10011-
+#.'#'.#    -1---1-    -11-11-
+#.....#    -11111-    -11111-
+-#####-    -------    -------
+
+S 10       Snow       Reachable
+-#####-    -------    -------
+#.q7'.#    -10001-    -?????-
+#.'#'.#    -1---1-    -??-??-
+#.....#    -11111-    -?????-
+-#####-    -------    -------
+
+Solved: true
+Time (CPU s): 1.8775624
+Valid: true
+Actions: 41
+    lUluRRlddrrruuLrddlUruuLLrddlUruLddlluluR
+Ball references from initial state:
+    Ball (0): Location(Coordinate(2,2),LargeBall)
+    Ball (1): Location(Coordinate(4,2),MediumBall)
+    Ball (2): Location(Coordinate(4,2),SmallBall)
+Ball Actions: 10
+    U(0)R(0)R(0)L(0)U(2)L(2)L(2)U(1)L(1)R(2)

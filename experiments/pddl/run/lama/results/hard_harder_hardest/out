@@ -1,0 +1,17 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 3599.95s
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 /lustre/home/sc061/jea20/git/downward/builds/release/bin/translate/translate.py ../../instances/hard_harder_hardest/domain.pddl ../../instances/hard_harder_hardest/problem.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.052s wall-clock]
+Normalizing task... [0.000s CPU, 0.002s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.002s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.085s wall-clock]
+Preparing model... [0.000s CPU, 0.005s wall-clock]
+Generated 163 rules.
+Computing model... translate exit code: -9
+
+Driver aborting after translate

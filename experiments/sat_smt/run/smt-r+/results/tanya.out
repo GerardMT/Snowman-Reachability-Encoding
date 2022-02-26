@@ -1,0 +1,71 @@
+Timesteps: 1 sat: false Time: 0.451785496 TotalTime: 0.452690326 (REAL s)
+Timesteps: 2 sat: false Time: 0.170033851 TotalTime: 0.638269883 (REAL s)
+Timesteps: 3 sat: false Time: 0.138302349 TotalTime: 0.776718891 (REAL s)
+Timesteps: 4 sat: false Time: 0.250174843 TotalTime: 1.027036033 (REAL s)
+Timesteps: 5 sat: true Time: 0.392642417 TotalTime: 1.419804384 (REAL s)
+
+S 0      Snow     Reachable
+-###-    -----    -----
+#...#    -111-    -111-
+#.1.#    -1-1-    -101-
+#p1.#    -1-1-    -101-
+#.1.#    -1-1-    -001-
+#...#    -111-    -011-
+-###-    -----    -----
+
+S 1      Snow     Reachable
+-###-    -----    -----
+#...#    -111-    -111-
+#2q.#    -0-1-    -011-
+#.1.#    -1-1-    -001-
+#.1.#    -1-1-    -001-
+#...#    -111-    -001-
+-###-    -----    -----
+
+S 2      Snow     Reachable
+-###-    -----    -----
+#...#    -111-    -110-
+#2'.#    -0-1-    -011-
+#.1.#    -1-1-    -001-
+#2q.#    -0-1-    -011-
+#...#    -111-    -111-
+-###-    -----    -----
+
+S 3      Snow     Reachable
+-###-    -----    -----
+#...#    -111-    -111-
+#2'.#    -0-1-    -011-
+#41.#    -0-1-    -001-
+#q'.#    -0-1-    -111-
+#...#    -111-    -111-
+-###-    -----    -----
+
+S 4      Snow     Reachable
+-###-    -----    -----
+#...#    -111-    -001-
+#q'.#    -0-1-    -111-
+#61.#    -0-1-    -001-
+#''.#    -0-1-    -001-
+#...#    -111-    -001-
+-###-    -----    -----
+
+S 5      Snow     Reachable
+-###-    -----    -----
+#...#    -111-    -???-
+#''.#    -0-1-    -???-
+#7q.#    -0-1-    -???-
+#''.#    -0-1-    -???-
+#...#    -111-    -???-
+-###-    -----    -----
+
+Solved: true
+Time (CPU s): 0.92554647
+Valid: true
+Actions: 25
+    uurrdLrddLdlUrruululDrrdL
+Ball references from initial state:
+    Ball (0): Location(Coordinate(2,2),SmallBall)
+    Ball (1): Location(Coordinate(2,3),SmallBall)
+    Ball (2): Location(Coordinate(2,4),SmallBall)
+Ball Actions: 5
+    L(2)L(0)U(0)D(2)L(1)

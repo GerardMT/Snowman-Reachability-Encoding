@@ -1,0 +1,192 @@
+Timesteps: 1 sat: false Time: 0.456552579 TotalTime: 0.457493095 (REAL s)
+Timesteps: 2 sat: false Time: 0.174296001 TotalTime: 0.656960711 (REAL s)
+Timesteps: 3 sat: false Time: 0.097868448 TotalTime: 0.754980468 (REAL s)
+Timesteps: 4 sat: false Time: 0.129989337 TotalTime: 0.885104512 (REAL s)
+Timesteps: 5 sat: false Time: 0.145551272 TotalTime: 1.03076643 (REAL s)
+Timesteps: 6 sat: false Time: 0.121128029 TotalTime: 1.152105517 (REAL s)
+Timesteps: 7 sat: false Time: 0.174464283 TotalTime: 1.326717726 (REAL s)
+Timesteps: 8 sat: false Time: 0.254687726 TotalTime: 1.581527995 (REAL s)
+Timesteps: 9 sat: false Time: 0.382184896 TotalTime: 1.96496461 (REAL s)
+Timesteps: 10 sat: false Time: 0.609517375 TotalTime: 2.574760175 (REAL s)
+Timesteps: 11 sat: false Time: 0.940239666 TotalTime: 3.515271891 (REAL s)
+Timesteps: 12 sat: false Time: 1.4972654 TotalTime: 5.01262598 (REAL s)
+Timesteps: 13 sat: false Time: 2.317867569 TotalTime: 7.330587365 (REAL s)
+Timesteps: 14 sat: false Time: 3.435984803 TotalTime: 10.766717476 (REAL s)
+Timesteps: 15 sat: false Time: 5.524009939 TotalTime: 16.290811073 (REAL s)
+Timesteps: 16 sat: false Time: 8.28990089 TotalTime: 24.580859365 (REAL s)
+Timesteps: 17 sat: true Time: 4.08794664 TotalTime: 28.668984039 (REAL s)
+
+S 0      Snow 
+-###-    -----
+#...#    -111-
+#.1.#    -1-1-
+#p1.#    -1-1-
+#.1.#    -1-1-
+#...#    -111-
+-###-    -----
+
+S 1      Snow 
+-###-    -----
+#...#    -111-
+#.1.#    -1-1-
+#.1.#    -1-1-
+#p1.#    -1-1-
+#...#    -111-
+-###-    -----
+
+S 2      Snow 
+-###-    -----
+#...#    -111-
+#.1.#    -1-1-
+#.1.#    -1-1-
+#.q2#    -1-0-
+#...#    -111-
+-###-    -----
+
+S 3      Snow 
+-###-    -----
+#...#    -111-
+#.1.#    -1-1-
+#.1.#    -1-1-
+#.'2#    -1-0-
+#.p.#    -111-
+-###-    -----
+
+S 4      Snow 
+-###-    -----
+#...#    -111-
+#.1.#    -1-1-
+#.1.#    -1-1-
+#.'2#    -1-0-
+#..p#    -111-
+-###-    -----
+
+S 5      Snow 
+-###-    -----
+#...#    -111-
+#.1.#    -1-1-
+#.14#    -1-0-
+#.'q#    -1-0-
+#...#    -111-
+-###-    -----
+
+S 6      Snow 
+-###-    -----
+#...#    -111-
+#.1.#    -1-1-
+#.14#    -1-0-
+#.q'#    -1-0-
+#...#    -111-
+-###-    -----
+
+S 7      Snow 
+-###-    -----
+#...#    -111-
+#.1.#    -1-1-
+#.14#    -1-0-
+#p''#    -1-0-
+#...#    -111-
+-###-    -----
+
+S 8      Snow 
+-###-    -----
+#...#    -111-
+#.1.#    -1-1-
+#p14#    -1-0-
+#.''#    -1-0-
+#...#    -111-
+-###-    -----
+
+S 9      Snow 
+-###-    -----
+#...#    -111-
+#p1.#    -1-1-
+#.14#    -1-0-
+#.''#    -1-0-
+#...#    -111-
+-###-    -----
+
+S 10     Snow 
+-###-    -----
+#...#    -111-
+#.q2#    -1-0-
+#.14#    -1-0-
+#.''#    -1-0-
+#...#    -111-
+-###-    -----
+
+S 11     Snow 
+-###-    -----
+#.p.#    -111-
+#.'2#    -1-0-
+#.14#    -1-0-
+#.''#    -1-0-
+#...#    -111-
+-###-    -----
+
+S 12     Snow 
+-###-    -----
+#..p#    -111-
+#.'2#    -1-0-
+#.14#    -1-0-
+#.''#    -1-0-
+#...#    -111-
+-###-    -----
+
+S 13     Snow 
+-###-    -----
+#...#    -111-
+#.'q#    -1-0-
+#.16#    -1-0-
+#.''#    -1-0-
+#...#    -111-
+-###-    -----
+
+S 14     Snow 
+-###-    -----
+#...#    -111-
+#.q'#    -1-0-
+#.16#    -1-0-
+#.''#    -1-0-
+#...#    -111-
+-###-    -----
+
+S 15     Snow 
+-###-    -----
+#...#    -111-
+#p''#    -1-0-
+#.16#    -1-0-
+#.''#    -1-0-
+#...#    -111-
+-###-    -----
+
+S 16     Snow 
+-###-    -----
+#...#    -111-
+#.''#    -1-0-
+#p16#    -1-0-
+#.''#    -1-0-
+#...#    -111-
+-###-    -----
+
+S 17     Snow 
+-###-    -----
+#...#    -111-
+#.''#    -1-0-
+#.q7#    -1-0-
+#.''#    -1-0-
+#...#    -111-
+-###-    -----
+
+
+Solved: true
+Time (CPU s): 27.695711
+Valid: true
+Actions: 17
+    dRdrUlluuRurDlldR
+Ball references from initial state:
+    Ball (0): Location(Coordinate(2,2),SmallBall)
+    Ball (1): Location(Coordinate(2,3),SmallBall)
+    Ball (2): Location(Coordinate(2,4),SmallBall)
+Ball Actions: 5
+    R(0)U(0)R(2)D(2)R(1)

@@ -1,0 +1,417 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 3599.95s
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 /lustre/home/sc061/jea20/git/downward/builds/release/bin/translate/translate.py ../../instances/tanya/domain.pddl ../../instances/tanya/problem.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.070s wall-clock]
+Normalizing task... [0.000s CPU, 0.002s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.067s wall-clock]
+Preparing model... [0.000s CPU, 0.004s wall-clock]
+Generated 150 rules.
+Computing model... [0.080s CPU, 0.082s wall-clock]
+3855 relevant atoms
+3045 auxiliary atoms
+6900 final queue length
+12554 total queue pushes
+Completing instantiation... [0.130s CPU, 0.121s wall-clock]
+Instantiating: [0.220s CPU, 0.278s wall-clock]
+Computing fact groups...
+Finding invariants...
+16 initial candidates
+Finding invariants: [0.010s CPU, 0.015s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.010s CPU, 0.000s wall-clock]
+Choosing groups...
+328 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.002s wall-clock]
+Computing fact groups: [0.020s CPU, 0.021s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.020s CPU, 0.025s wall-clock]
+Translator axioms removed by simplifying: 1005
+Computing negative axioms... [34.680s CPU, 34.806s wall-clock]
+Processing axioms: [34.740s CPU, 34.860s wall-clock]
+Translating task: [41.530s CPU, 41.675s wall-clock]
+524 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+52125 axioms removed
+126 propositions removed
+Detecting unreachable propositions: [1.810s CPU, 1.817s wall-clock]
+Reordering and filtering variables...
+274 of 274 variables necessary.
+0 of 9 mutex groups necessary.
+302 of 302 operators necessary.
+257367 of 257367 axiom rules necessary.
+Reordering and filtering variables: [1.100s CPU, 1.109s wall-clock]
+Translator variables: 274
+Translator derived variables: 225
+Translator facts: 590
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 302
+Translator axioms: 257367
+Translator task size: 1057028
+Translator peak memory: 229952 KB
+Writing output... [2.810s CPU, 18.330s wall-clock]
+Done! [47.690s CPU, 63.483s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 3551.98s
+INFO     search memory limit: None
+INFO     search command line string: /lustre/home/sc061/jea20/git/downward/builds/release/bin/downward --if-unit-cost --evaluator 'hlm=lmcount(lm_reasonable_orders_hps(lm_rhw()),pref=false)' --evaluator 'hff=ff()' --search 'iterated([lazy_greedy([hff,hlm],preferred=[hff,hlm]),lazy_wastar([hff,hlm],preferred=[hff,hlm],w=5),lazy_wastar([hff,hlm],preferred=[hff,hlm],w=3),lazy_wastar([hff,hlm],preferred=[hff,hlm],w=2),lazy_wastar([hff,hlm],preferred=[hff,hlm],w=1)],repeat_last=true,continue_on_fail=true)' --if-non-unit-cost --evaluator 'hlm1=lmcount(lm_reasonable_orders_hps(lm_rhw()),transform=adapt_costs(one),pref=false)' --evaluator 'hff1=ff(transform=adapt_costs(one))' --evaluator 'hlm2=lmcount(lm_reasonable_orders_hps(lm_rhw()),transform=adapt_costs(plusone),pref=false)' --evaluator 'hff2=ff(transform=adapt_costs(plusone))' --search 'iterated([lazy_greedy([hff1,hlm1],preferred=[hff1,hlm1],cost_type=one,reopen_closed=false),lazy_greedy([hff2,hlm2],preferred=[hff2,hlm2],reopen_closed=false),lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=5),lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=3),lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=2),lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=1)],repeat_last=true,continue_on_fail=true)' --always --internal-plan-file sas_plan < output.sas
+[t=6.0774e-05s, 21972 KB] reading input...
+[t=0.690466s, 76436 KB] done reading input!
+[t=0.692572s, 76436 KB] Initializing landmark count heuristic...
+[t=0.692619s, 76436 KB] Generating landmark graph...
+[t=0.700246s, 77060 KB] Building a landmark graph with reasonable orders.
+[t=0.708121s, 78304 KB] Initializing Exploration...
+[t=0.832516s, 116404 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=0.922148s, 116404 KB] Landmarks generation time: 0.224249s
+[t=0.924673s, 116404 KB] Discovered 2 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.924709s, 116404 KB] 1 edges
+[t=0.924728s, 116404 KB] approx. reasonable orders
+[t=0.924748s, 116404 KB] approx. obedient reasonable orders
+[t=0.924768s, 116404 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.924785s, 116404 KB] Landmarks generation time: 0.232157s
+[t=0.924802s, 116404 KB] Discovered 2 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.924818s, 116404 KB] 1 edges
+[t=0.924834s, 116404 KB] Landmark graph generation time: 0.232231s
+[t=0.924852s, 116404 KB] Landmark graph contains 2 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.924868s, 116404 KB] Landmark graph contains 1 orderings.
+[t=0.969075s, 116404 KB] Simplifying 258817 unary operators... done! [258274 unary operators]
+[t=2.15471s, 116404 KB] time to simplify: 1.18574s
+[t=2.16364s, 116404 KB] Initializing additive heuristic...
+[t=2.16373s, 116404 KB] Initializing FF heuristic...
+[t=2.16389s, 116404 KB] Initializing landmark count heuristic...
+[t=2.16392s, 116404 KB] Generating landmark graph...
+[t=2.17233s, 116404 KB] Building a landmark graph with reasonable orders.
+[t=2.17979s, 116404 KB] Initializing Exploration...
+[t=2.28127s, 140092 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=2.34575s, 140092 KB] Landmarks generation time: 0.173442s
+[t=2.34587s, 140092 KB] Discovered 2 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=2.34589s, 140092 KB] 1 edges
+[t=2.34591s, 140092 KB] approx. reasonable orders
+[t=2.34593s, 140092 KB] approx. obedient reasonable orders
+[t=2.34595s, 140092 KB] Removed 0 reasonable or obedient reasonable orders
+[t=2.34597s, 140092 KB] Landmarks generation time: 0.182042s
+[t=2.34598s, 140092 KB] Discovered 2 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=2.346s, 140092 KB] 1 edges
+[t=2.34602s, 140092 KB] Landmark graph generation time: 0.182112s
+[t=2.34603s, 140092 KB] Landmark graph contains 2 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=2.34605s, 140092 KB] Landmark graph contains 1 orderings.
+[t=2.39113s, 140092 KB] Simplifying 258817 unary operators... done! [258274 unary operators]
+[t=3.51465s, 140092 KB] time to simplify: 1.12371s
+[t=3.52936s, 143500 KB] Initializing additive heuristic...
+[t=3.52945s, 143500 KB] Initializing FF heuristic...
+[t=3.52965s, 143500 KB] Building successor generator...done!
+[t=3.52993s, 143500 KB] peak memory difference for successor generator creation: 0 KB
+[t=3.52995s, 143500 KB] time for successor generation creation: 0.000212846s
+[t=3.52998s, 143500 KB] Variables: 274
+[t=3.53s, 143500 KB] FactPairs: 590
+[t=3.53001s, 143500 KB] Bytes per state: 36
+[t=3.53044s, 143500 KB] Building successor generator...done!
+[t=3.5305s, 143500 KB] peak memory difference for successor generator creation: 0 KB
+[t=3.53052s, 143500 KB] time for successor generation creation: 8.06e-07s
+[t=3.53054s, 143500 KB] Variables: 274
+[t=3.53056s, 143500 KB] FactPairs: 590
+[t=3.53057s, 143500 KB] Bytes per state: 36
+[t=3.53062s, 143500 KB] Starting search: lazy_greedy(list(hff1, hlm1), preferred = list(hff1, hlm1), cost_type = one, reopen_closed = false)
+[t=3.53064s, 143500 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=3.53076s, 143500 KB] 1 initial landmarks, 1 goal landmarks
+[t=3.53848s, 143500 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), transform = adapt_costs(one), pref = false): 1
+[t=3.53857s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(one)): 10
+[t=3.53859s, 143500 KB] g=0, 1 evaluated, 0 expanded
+[t=3.53863s, 143500 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), transform = adapt_costs(one), pref = false): 1
+[t=3.53865s, 143500 KB] Initial heuristic value for ff(transform = adapt_costs(one)): 10
+[t=3.94228s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(one)): 8
+[t=3.94251s, 143500 KB] g=5, 50 evaluated, 49 expanded
+[t=4.001s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(one)): 7
+[t=4.00109s, 143500 KB] g=10, 64 evaluated, 63 expanded
+[t=4.0441s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(one)): 6
+[t=4.04418s, 143500 KB] g=14, 78 evaluated, 77 expanded
+[t=6.1204s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(one)): 5
+[t=6.1205s, 143500 KB] g=17, 576 evaluated, 575 expanded
+[t=6.12256s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(one)): 4
+[t=6.12263s, 143500 KB] g=18, 577 evaluated, 576 expanded
+[t=6.12408s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(one)): 3
+[t=6.12414s, 143500 KB] g=19, 578 evaluated, 577 expanded
+[t=6.12527s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(one)): 2
+[t=6.12531s, 143500 KB] g=20, 579 evaluated, 578 expanded
+[t=6.12625s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(one)): 1
+[t=6.12628s, 143500 KB] g=21, 580 evaluated, 579 expanded
+[t=6.12684s, 143500 KB] Solution found!
+[t=6.12687s, 143500 KB] Actual search time: 2.59609s
+move_character loc_1_3 loc_1_4 up (0)
+move_ball ball_2 loc_1_4 loc_2_4 loc_3_4 right (1)
+move_character loc_2_4 loc_1_4 left (0)
+move_character loc_1_4 loc_1_3 down (0)
+move_character loc_1_3 loc_1_2 down (0)
+move_ball ball_0 loc_1_2 loc_2_2 loc_3_2 right (1)
+move_character loc_2_2 loc_2_1 down (0)
+move_character loc_2_1 loc_3_1 right (0)
+move_ball ball_0 loc_3_1 loc_3_2 loc_3_3 up (1)
+move_character loc_3_2 loc_2_2 left (0)
+move_character loc_2_2 loc_1_2 left (0)
+move_character loc_1_2 loc_1_3 up (0)
+move_character loc_1_3 loc_1_4 up (0)
+move_character loc_1_4 loc_1_5 up (0)
+move_character loc_1_5 loc_2_5 right (0)
+move_character loc_2_5 loc_3_5 right (0)
+move_ball ball_2 loc_3_5 loc_3_4 loc_3_3 down (1)
+move_character loc_3_4 loc_2_4 left (0)
+move_character loc_2_4 loc_1_4 left (0)
+move_character loc_1_4 loc_1_3 down (0)
+move_ball ball_1 loc_1_3 loc_2_3 loc_3_3 right (1)
+goal ball_0 ball_1 ball_2 loc_3_3 (0)
+[t=6.12762s, 143500 KB] Plan length: 22 step(s).
+[t=6.12785s, 143500 KB] Plan cost: 5
+[t=6.12788s, 143500 KB] Expanded 580 state(s).
+[t=6.1279s, 143500 KB] Reopened 0 state(s).
+[t=6.12791s, 143500 KB] Evaluated 581 state(s).
+[t=6.12793s, 143500 KB] Evaluations: 1162
+[t=6.12795s, 143500 KB] Generated 1904 state(s).
+[t=6.12797s, 143500 KB] Dead ends: 0 state(s).
+[t=6.12798s, 143500 KB] Number of registered states: 581
+[t=6.128s, 143500 KB] Int hash set load factor: 581/1024 = 0.567383
+[t=6.12802s, 143500 KB] Int hash set resizes: 10
+[t=6.12804s, 143500 KB] Best solution cost so far: 5
+[t=6.12806s, 143500 KB] Solution found - keep searching
+[t=6.12846s, 143500 KB] Building successor generator...done!
+[t=6.12854s, 143500 KB] peak memory difference for successor generator creation: 0 KB
+[t=6.12855s, 143500 KB] time for successor generation creation: 1.77e-06s
+[t=6.12859s, 143500 KB] Variables: 274
+[t=6.12861s, 143500 KB] FactPairs: 590
+[t=6.12862s, 143500 KB] Bytes per state: 36
+[t=6.12867s, 143500 KB] Starting search: lazy_greedy(list(hff2, hlm2), preferred = list(hff2, hlm2), reopen_closed = false)
+[t=6.1287s, 143500 KB] Conducting lazy best first search, (real) bound = 5
+[t=6.12874s, 143500 KB] 1 initial landmarks, 1 goal landmarks
+[t=6.13854s, 143500 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), transform = adapt_costs(plusone), pref = false): 1
+[t=6.13872s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 13
+[t=6.13875s, 143500 KB] g=0, 1 evaluated, 0 expanded
+[t=6.13878s, 143500 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), transform = adapt_costs(plusone), pref = false): 1
+[t=6.1388s, 143500 KB] Initial heuristic value for ff(transform = adapt_costs(plusone)): 13
+[t=6.42518s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 12
+[t=6.42528s, 143500 KB] g=2, 50 evaluated, 49 expanded
+[t=6.43226s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 11
+[t=6.43235s, 143500 KB] g=2, 52 evaluated, 51 expanded
+[t=6.51435s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 9
+[t=6.51444s, 143500 KB] g=4, 77 evaluated, 76 expanded
+[t=6.62513s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 8
+[t=6.62522s, 143500 KB] g=4, 113 evaluated, 112 expanded
+[t=6.76875s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 6
+[t=6.76885s, 143500 KB] g=4, 162 evaluated, 161 expanded
+[t=6.77023s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 5
+[t=6.77028s, 143500 KB] g=4, 163 evaluated, 162 expanded
+[t=6.77517s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 4
+[t=6.77525s, 143500 KB] g=4, 165 evaluated, 164 expanded
+[t=6.77637s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 3
+[t=6.77641s, 143500 KB] g=4, 166 evaluated, 165 expanded
+[t=41.5984s, 143500 KB] Completely explored state space -- no solution!
+[t=41.5988s, 143500 KB] Actual search time: 35.4701s
+[t=41.5989s, 143500 KB] Expanded 7134 state(s).
+[t=41.5989s, 143500 KB] Reopened 0 state(s).
+[t=41.5989s, 143500 KB] Evaluated 7134 state(s).
+[t=41.5989s, 143500 KB] Evaluations: 14268
+[t=41.5989s, 143500 KB] Generated 21768 state(s).
+[t=41.599s, 143500 KB] Dead ends: 0 state(s).
+[t=41.599s, 143500 KB] Number of registered states: 7134
+[t=41.599s, 143500 KB] Int hash set load factor: 7134/8192 = 0.87085
+[t=41.599s, 143500 KB] Int hash set resizes: 13
+[t=41.599s, 143500 KB] Best solution cost so far: 5
+[t=41.599s, 143500 KB] No solution found - keep searching
+[t=41.5993s, 143500 KB] Building successor generator...done!
+[t=41.5993s, 143500 KB] peak memory difference for successor generator creation: 0 KB
+[t=41.5994s, 143500 KB] time for successor generation creation: 2.015e-06s
+[t=41.5994s, 143500 KB] Variables: 274
+[t=41.5994s, 143500 KB] FactPairs: 590
+[t=41.5994s, 143500 KB] Bytes per state: 36
+[t=41.5995s, 143500 KB] Starting search: lazy_wastar(list(hff2, hlm2), preferred = list(hff2, hlm2), w = 5)
+[t=41.5995s, 143500 KB] Conducting lazy best first search, (real) bound = 5
+[t=41.5995s, 143500 KB] 1 initial landmarks, 1 goal landmarks
+[t=41.6193s, 143500 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), transform = adapt_costs(plusone), pref = false): 1
+[t=41.6195s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 13
+[t=41.6195s, 143500 KB] g=0, 1 evaluated, 0 expanded
+[t=41.6196s, 143500 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), transform = adapt_costs(plusone), pref = false): 1
+[t=41.6196s, 143500 KB] Initial heuristic value for ff(transform = adapt_costs(plusone)): 13
+[t=42.1137s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 12
+[t=42.1138s, 143500 KB] g=2, 46 evaluated, 45 expanded
+[t=42.1283s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 11
+[t=42.1286s, 143500 KB] g=2, 47 evaluated, 46 expanded
+[t=42.3738s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 9
+[t=42.3741s, 143500 KB] g=4, 74 evaluated, 73 expanded
+[t=42.7393s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 6
+[t=42.7394s, 143500 KB] g=4, 135 evaluated, 134 expanded
+[t=42.7465s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 5
+[t=42.7467s, 143500 KB] g=4, 137 evaluated, 136 expanded
+[t=42.7485s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 4
+[t=42.7486s, 143500 KB] g=4, 138 evaluated, 137 expanded
+[t=42.7559s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 3
+[t=42.756s, 143500 KB] g=4, 140 evaluated, 139 expanded
+[t=86.5064s, 143500 KB] Completely explored state space -- no solution!
+[t=86.5067s, 143500 KB] Actual search time: 44.9072s
+[t=86.5068s, 143500 KB] Expanded 7138 state(s).
+[t=86.5068s, 143500 KB] Reopened 4 state(s).
+[t=86.5068s, 143500 KB] Evaluated 7138 state(s).
+[t=86.5068s, 143500 KB] Evaluations: 14272
+[t=86.5069s, 143500 KB] Generated 21780 state(s).
+[t=86.5069s, 143500 KB] Dead ends: 0 state(s).
+[t=86.5069s, 143500 KB] Number of registered states: 7134
+[t=86.5069s, 143500 KB] Int hash set load factor: 7134/8192 = 0.87085
+[t=86.5069s, 143500 KB] Int hash set resizes: 13
+[t=86.5069s, 143500 KB] Best solution cost so far: 5
+[t=86.507s, 143500 KB] No solution found - keep searching
+[t=86.5071s, 143500 KB] Building successor generator...done!
+[t=86.5072s, 143500 KB] peak memory difference for successor generator creation: 0 KB
+[t=86.5072s, 143500 KB] time for successor generation creation: 1.444e-06s
+[t=86.5072s, 143500 KB] Variables: 274
+[t=86.5073s, 143500 KB] FactPairs: 590
+[t=86.5073s, 143500 KB] Bytes per state: 36
+[t=86.5073s, 143500 KB] Starting search: lazy_wastar(list(hff2, hlm2), preferred = list(hff2, hlm2), w = 3)
+[t=86.5073s, 143500 KB] Conducting lazy best first search, (real) bound = 5
+[t=86.5074s, 143500 KB] 1 initial landmarks, 1 goal landmarks
+[t=86.5253s, 143500 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), transform = adapt_costs(plusone), pref = false): 1
+[t=86.5255s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 13
+[t=86.5255s, 143500 KB] g=0, 1 evaluated, 0 expanded
+[t=86.5256s, 143500 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), transform = adapt_costs(plusone), pref = false): 1
+[t=86.5256s, 143500 KB] Initial heuristic value for ff(transform = adapt_costs(plusone)): 13
+[t=86.9807s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 12
+[t=86.9808s, 143500 KB] g=2, 46 evaluated, 45 expanded
+[t=86.9865s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 11
+[t=86.9866s, 143500 KB] g=2, 47 evaluated, 46 expanded
+[t=87.1981s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 9
+[t=87.1982s, 143500 KB] g=4, 74 evaluated, 73 expanded
+[t=87.5664s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 6
+[t=87.5665s, 143500 KB] g=4, 135 evaluated, 134 expanded
+[t=87.5732s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 5
+[t=87.5733s, 143500 KB] g=4, 137 evaluated, 136 expanded
+[t=87.5748s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 4
+[t=87.5749s, 143500 KB] g=4, 138 evaluated, 137 expanded
+[t=87.5817s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 3
+[t=87.5818s, 143500 KB] g=4, 140 evaluated, 139 expanded
+[t=130.656s, 143500 KB] Completely explored state space -- no solution!
+[t=130.656s, 143500 KB] Actual search time: 44.1489s
+[t=130.656s, 143500 KB] Expanded 7138 state(s).
+[t=130.656s, 143500 KB] Reopened 4 state(s).
+[t=130.656s, 143500 KB] Evaluated 7138 state(s).
+[t=130.656s, 143500 KB] Evaluations: 14272
+[t=130.656s, 143500 KB] Generated 21780 state(s).
+[t=130.656s, 143500 KB] Dead ends: 0 state(s).
+[t=130.656s, 143500 KB] Number of registered states: 7134
+[t=130.656s, 143500 KB] Int hash set load factor: 7134/8192 = 0.87085
+[t=130.656s, 143500 KB] Int hash set resizes: 13
+[t=130.656s, 143500 KB] Best solution cost so far: 5
+[t=130.657s, 143500 KB] No solution found - keep searching
+[t=130.657s, 143500 KB] Building successor generator...done!
+[t=130.657s, 143500 KB] peak memory difference for successor generator creation: 0 KB
+[t=130.657s, 143500 KB] time for successor generation creation: 1.817e-06s
+[t=130.657s, 143500 KB] Variables: 274
+[t=130.657s, 143500 KB] FactPairs: 590
+[t=130.657s, 143500 KB] Bytes per state: 36
+[t=130.657s, 143500 KB] Starting search: lazy_wastar(list(hff2, hlm2), preferred = list(hff2, hlm2), w = 2)
+[t=130.657s, 143500 KB] Conducting lazy best first search, (real) bound = 5
+[t=130.657s, 143500 KB] 1 initial landmarks, 1 goal landmarks
+[t=130.664s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 13
+[t=130.664s, 143500 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), transform = adapt_costs(plusone), pref = false): 1
+[t=130.664s, 143500 KB] g=0, 1 evaluated, 0 expanded
+[t=130.664s, 143500 KB] Initial heuristic value for ff(transform = adapt_costs(plusone)): 13
+[t=130.664s, 143500 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), transform = adapt_costs(plusone), pref = false): 1
+[t=131.065s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 12
+[t=131.065s, 143500 KB] g=2, 46 evaluated, 45 expanded
+[t=131.071s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 11
+[t=131.071s, 143500 KB] g=2, 47 evaluated, 46 expanded
+[t=131.388s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 9
+[t=131.388s, 143500 KB] g=4, 74 evaluated, 73 expanded
+[t=131.788s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 6
+[t=131.788s, 143500 KB] g=4, 135 evaluated, 134 expanded
+[t=131.794s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 5
+[t=131.794s, 143500 KB] g=4, 137 evaluated, 136 expanded
+[t=131.796s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 4
+[t=131.796s, 143500 KB] g=4, 138 evaluated, 137 expanded
+[t=131.803s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 3
+[t=131.803s, 143500 KB] g=4, 140 evaluated, 139 expanded
+[t=180.542s, 143500 KB] Completely explored state space -- no solution!
+[t=180.542s, 143500 KB] Actual search time: 49.8848s
+[t=180.542s, 143500 KB] Expanded 7138 state(s).
+[t=180.542s, 143500 KB] Reopened 4 state(s).
+[t=180.542s, 143500 KB] Evaluated 7138 state(s).
+[t=180.542s, 143500 KB] Evaluations: 14272
+[t=180.542s, 143500 KB] Generated 21780 state(s).
+[t=180.542s, 143500 KB] Dead ends: 0 state(s).
+[t=180.542s, 143500 KB] Number of registered states: 7134
+[t=180.542s, 143500 KB] Int hash set load factor: 7134/8192 = 0.87085
+[t=180.542s, 143500 KB] Int hash set resizes: 13
+[t=180.542s, 143500 KB] Best solution cost so far: 5
+[t=180.542s, 143500 KB] No solution found - keep searching
+[t=180.542s, 143500 KB] Building successor generator...done!
+[t=180.542s, 143500 KB] peak memory difference for successor generator creation: 0 KB
+[t=180.542s, 143500 KB] time for successor generation creation: 1.69e-06s
+[t=180.542s, 143500 KB] Variables: 274
+[t=180.542s, 143500 KB] FactPairs: 590
+[t=180.542s, 143500 KB] Bytes per state: 36
+[t=180.542s, 143500 KB] Starting search: lazy_wastar(list(hff2, hlm2), preferred = list(hff2, hlm2), w = 1)
+[t=180.542s, 143500 KB] Conducting lazy best first search, (real) bound = 5
+[t=180.542s, 143500 KB] 1 initial landmarks, 1 goal landmarks
+[t=180.55s, 143500 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), transform = adapt_costs(plusone), pref = false): 1
+[t=180.551s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 13
+[t=180.551s, 143500 KB] g=0, 1 evaluated, 0 expanded
+[t=180.551s, 143500 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), transform = adapt_costs(plusone), pref = false): 1
+[t=180.551s, 143500 KB] Initial heuristic value for ff(transform = adapt_costs(plusone)): 13
+[t=181.133s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 12
+[t=181.133s, 143500 KB] g=2, 46 evaluated, 45 expanded
+[t=181.143s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 11
+[t=181.143s, 143500 KB] g=2, 47 evaluated, 46 expanded
+[t=181.407s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 9
+[t=181.407s, 143500 KB] g=4, 74 evaluated, 73 expanded
+[t=181.728s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 6
+[t=181.728s, 143500 KB] g=4, 110 evaluated, 109 expanded
+[t=181.737s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 5
+[t=181.737s, 143500 KB] g=4, 112 evaluated, 111 expanded
+[t=181.74s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 4
+[t=181.74s, 143500 KB] g=4, 113 evaluated, 112 expanded
+[t=181.747s, 143500 KB] New best heuristic value for ff(transform = adapt_costs(plusone)): 3
+[t=181.747s, 143500 KB] g=4, 115 evaluated, 114 expanded
+[t=233.843s, 143500 KB] Completely explored state space -- no solution!
+[t=233.844s, 143500 KB] Actual search time: 53.3013s
+[t=233.844s, 143500 KB] Expanded 7138 state(s).
+[t=233.844s, 143500 KB] Reopened 4 state(s).
+[t=233.844s, 143500 KB] Evaluated 7138 state(s).
+[t=233.844s, 143500 KB] Evaluations: 14272
+[t=233.844s, 143500 KB] Generated 21780 state(s).
+[t=233.844s, 143500 KB] Dead ends: 0 state(s).
+[t=233.844s, 143500 KB] Number of registered states: 7134
+[t=233.844s, 143500 KB] Int hash set load factor: 7134/8192 = 0.87085
+[t=233.844s, 143500 KB] Int hash set resizes: 13
+[t=233.844s, 143500 KB] Best solution cost so far: 5
+[t=233.844s, 143500 KB] No solution found - keep searching
+[t=233.844s, 143500 KB] Actual search time: 230.314s
+[t=233.844s, 143500 KB] Cumulative statistics:
+[t=233.844s, 143500 KB] Expanded 36266 state(s).
+[t=233.844s, 143500 KB] Reopened 16 state(s).
+[t=233.844s, 143500 KB] Evaluated 36267 state(s).
+[t=233.844s, 143500 KB] Evaluations: 72518
+[t=233.844s, 143500 KB] Generated 110792 state(s).
+[t=233.844s, 143500 KB] Dead ends: 0 state(s).
+[t=233.844s, 143500 KB] Search time: 230.314s
+[t=233.844s, 143500 KB] Total time: 233.844s
+Solution found.
+Peak memory: 143500 KB
+Remove intermediate file output.sas
+search exit code: 0
+

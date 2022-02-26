@@ -1,0 +1,236 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 3599.96s
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 /lustre/home/sc061/jea20/git/downward/builds/release/bin/translate/translate.py ../../instances/louise/domain.pddl ../../instances/louise/problem.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.087s wall-clock]
+Normalizing task... [0.000s CPU, 0.002s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.050s wall-clock]
+Preparing model... [0.000s CPU, 0.003s wall-clock]
+Generated 150 rules.
+Computing model... [0.090s CPU, 0.090s wall-clock]
+4581 relevant atoms
+3606 auxiliary atoms
+8187 final queue length
+15449 total queue pushes
+Completing instantiation... [0.140s CPU, 0.140s wall-clock]
+Instantiating: [0.240s CPU, 0.286s wall-clock]
+Computing fact groups...
+Finding invariants...
+16 initial candidates
+Finding invariants: [0.020s CPU, 0.016s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+394 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.002s wall-clock]
+Computing fact groups: [0.020s CPU, 0.024s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.001s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.010s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.030s CPU, 0.029s wall-clock]
+Translator axioms removed by simplifying: 1170
+Computing negative axioms... [38.580s CPU, 38.698s wall-clock]
+Processing axioms: [38.640s CPU, 38.761s wall-clock]
+Translating task: [50.670s CPU, 50.828s wall-clock]
+518 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+85716 axioms removed
+186 propositions removed
+Detecting unreachable propositions: [3.270s CPU, 3.279s wall-clock]
+Reordering and filtering variables...
+310 of 310 variables necessary.
+0 of 9 mutex groups necessary.
+326 of 326 operators necessary.
+509418 of 509418 axiom rules necessary.
+Reordering and filtering variables: [1.870s CPU, 1.881s wall-clock]
+Translator variables: 310
+Translator derived variables: 252
+Translator facts: 671
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 326
+Translator axioms: 509418
+Translator task size: 2087720
+Translator peak memory: 394364 KB
+Writing output... [5.410s CPU, 9.434s wall-clock]
+Done! [61.770s CPU, 66.088s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search portfolio: /lustre/home/sc061/jea20/git/downward/driver/portfolios/seq_opt_fdss_2.py
+remaining time: 3537.8
+config 0: relative time 1, remaining 5
+args: ['/lustre/home/sc061/jea20/git/downward/builds/release/bin/downward', '--search', 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1))', '--internal-plan-file', 'sas_plan']
+INFO     search stdin: output.sas
+INFO     search time limit: 707.5600000000001s
+INFO     search memory limit: None
+INFO     search command line string: /lustre/home/sc061/jea20/git/downward/builds/release/bin/downward --search 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=true),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=infinity,threshold_before_merge=1))' --internal-plan-file sas_plan < output.sas
+[t=6.6935e-05s, 21968 KB] reading input...
+[t=1.34979s, 129396 KB] done reading input!
+[t=1.35184s, 129396 KB] Initializing merge-and-shrink heuristic...
+[t=1.35191s, 129396 KB] Running merge-and-shrink algorithm...
+This configuration does not support axioms!
+Terminating.
+Tried to use unsupported feature.
+Peak memory: 129396 KB
+exitcode: 34
+
+remaining time: 3536.44
+config 1: relative time 1, remaining 4
+args: ['/lustre/home/sc061/jea20/git/downward/builds/release/bin/downward', '--search', 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000))', '--internal-plan-file', 'sas_plan']
+INFO     search stdin: output.sas
+INFO     search time limit: 884.11s
+INFO     search memory limit: None
+INFO     search command line string: /lustre/home/sc061/jea20/git/downward/builds/release/bin/downward --search 'astar(merge_and_shrink(merge_strategy=merge_precomputed(merge_tree=linear(variable_order=reverse_level)),shrink_strategy=shrink_bisimulation(greedy=false),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=200000))' --internal-plan-file sas_plan < output.sas
+[t=6.2348e-05s, 21968 KB] reading input...
+[t=1.34725s, 129396 KB] done reading input!
+[t=1.34919s, 129396 KB] Initializing merge-and-shrink heuristic...
+[t=1.34925s, 129396 KB] Running merge-and-shrink algorithm...
+This configuration does not support axioms!
+Terminating.
+Tried to use unsupported feature.
+Peak memory: 129396 KB
+exitcode: 34
+
+remaining time: 3535.08
+config 2: relative time 1, remaining 3
+args: ['/lustre/home/sc061/jea20/git/downward/builds/release/bin/downward', '--evaluator', 'lmc=lmcount(lm_merged([lm_rhw(),lm_hm(m=1)]),admissible=true)', '--search', 'astar(lmc,lazy_evaluator=lmc)', '--internal-plan-file', 'sas_plan']
+INFO     search stdin: output.sas
+INFO     search time limit: 1178.36s
+INFO     search memory limit: None
+INFO     search command line string: /lustre/home/sc061/jea20/git/downward/builds/release/bin/downward --evaluator 'lmc=lmcount(lm_merged([lm_rhw(),lm_hm(m=1)]),admissible=true)' --search 'astar(lmc,lazy_evaluator=lmc)' --internal-plan-file sas_plan < output.sas
+[t=6.313e-05s, 21968 KB] reading input...
+[t=1.35395s, 129396 KB] done reading input!
+[t=1.35578s, 129396 KB] Initializing landmark count heuristic...
+[t=1.35586s, 129396 KB] Generating landmark graph...
+cost partitioning does not support axioms
+Tried to use unsupported feature.
+Peak memory: 129396 KB
+exitcode: 34
+
+remaining time: 3533.71
+config 3: relative time 1, remaining 2
+args: ['/lustre/home/sc061/jea20/git/downward/builds/release/bin/downward', '--search', 'astar(lmcut())', '--internal-plan-file', 'sas_plan']
+INFO     search stdin: output.sas
+INFO     search time limit: 1766.855s
+INFO     search memory limit: None
+INFO     search command line string: /lustre/home/sc061/jea20/git/downward/builds/release/bin/downward --search 'astar(lmcut())' --internal-plan-file sas_plan < output.sas
+[t=7.1307e-05s, 21968 KB] reading input...
+[t=1.3441s, 129396 KB] done reading input!
+This configuration does not support axioms!
+Terminating.
+Tried to use unsupported feature.
+Peak memory: 129396 KB
+exitcode: 34
+
+remaining time: 3532.34
+config 4: relative time 1, remaining 1
+args: ['/lustre/home/sc061/jea20/git/downward/builds/release/bin/downward', '--search', 'astar(blind())', '--internal-plan-file', 'sas_plan']
+INFO     search stdin: output.sas
+INFO     search time limit: 3532.34s
+INFO     search memory limit: None
+INFO     search command line string: /lustre/home/sc061/jea20/git/downward/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file sas_plan < output.sas
+[t=5.6988e-05s, 21968 KB] reading input...
+[t=1.34999s, 129396 KB] done reading input!
+[t=1.3516s, 129396 KB] Initializing blind search heuristic...
+[t=1.3517s, 129396 KB] Building successor generator...done!
+[t=1.35199s, 129396 KB] peak memory difference for successor generator creation: 0 KB
+[t=1.35201s, 129396 KB] time for successor generation creation: 0.00022426s
+[t=1.35204s, 129396 KB] Variables: 310
+[t=1.35215s, 129396 KB] FactPairs: 671
+[t=1.35217s, 129396 KB] Bytes per state: 44
+[t=1.35225s, 129396 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=1.35232s, 129396 KB] New best heuristic value for blind: 0
+[t=1.35235s, 129396 KB] g=0, 1 evaluated, 0 expanded
+[t=1.35237s, 129396 KB] f = 0, 1 evaluated, 0 expanded
+[t=1.35239s, 129396 KB] Initial heuristic value for blind: 0
+[t=1.35241s, 129396 KB] pruning method: none
+[t=1.35268s, 129396 KB] f = 1, 19 evaluated, 15 expanded
+[t=1.35338s, 129396 KB] f = 2, 69 evaluated, 59 expanded
+[t=1.35503s, 129396 KB] f = 3, 186 evaluated, 164 expanded
+[t=1.3581s, 129396 KB] f = 4, 410 evaluated, 360 expanded
+[t=1.36624s, 129396 KB] f = 5, 1012 evaluated, 880 expanded
+[t=1.38501s, 129396 KB] f = 6, 2354 evaluated, 2064 expanded
+[t=1.4226s, 129396 KB] f = 7, 5010 evaluated, 4472 expanded
+[t=1.49044s, 129396 KB] f = 8, 9758 evaluated, 8834 expanded
+[t=1.60517s, 129396 KB] f = 9, 17544 evaluated, 16126 expanded
+[t=1.77656s, 129748 KB] f = 10, 29266 evaluated, 27176 expanded
+[t=2.02899s, 131064 KB] f = 11, 46054 evaluated, 43268 expanded
+[t=2.36892s, 133072 KB] f = 12, 68687 evaluated, 65091 expanded
+[t=2.79133s, 134840 KB] f = 13, 96665 evaluated, 92691 expanded
+[t=2.86954s, 135384 KB] Solution found!
+[t=2.86965s, 135384 KB] Actual search time: 1.51724s
+move_character loc_3_1 loc_4_1 right (0)
+move_character loc_4_1 loc_5_1 right (0)
+move_character loc_5_1 loc_5_2 up (0)
+move_character loc_5_2 loc_5_3 up (0)
+move_character loc_5_3 loc_4_3 left (0)
+move_ball ball_2 loc_4_3 loc_4_2 loc_4_1 down (1)
+move_character loc_4_2 loc_5_2 right (0)
+move_character loc_5_2 loc_5_1 down (0)
+move_ball ball_2 loc_5_1 loc_4_1 loc_3_1 left (1)
+move_ball ball_2 loc_4_1 loc_3_1 loc_2_1 left (1)
+move_ball ball_2 loc_3_1 loc_2_1 loc_1_1 left (1)
+move_ball ball_0 loc_2_1 loc_2_2 loc_2_3 up (1)
+move_character loc_2_2 loc_1_2 left (0)
+move_character loc_1_2 loc_1_3 up (0)
+move_character loc_1_3 loc_1_4 up (0)
+move_character loc_1_4 loc_2_4 right (0)
+move_ball ball_0 loc_2_4 loc_2_3 loc_2_2 down (1)
+move_ball ball_0 loc_2_3 loc_2_2 loc_2_1 down (1)
+move_ball ball_1 loc_2_2 loc_3_2 loc_4_2 right (1)
+move_character loc_3_2 loc_3_1 down (0)
+move_ball ball_0 loc_3_1 loc_2_1 loc_1_1 left (1)
+move_character loc_2_1 loc_3_1 right (0)
+move_character loc_3_1 loc_4_1 right (0)
+move_character loc_4_1 loc_5_1 right (0)
+move_character loc_5_1 loc_5_2 up (0)
+move_character loc_5_2 loc_5_3 up (0)
+move_character loc_5_3 loc_4_3 left (0)
+move_ball ball_1 loc_4_3 loc_4_2 loc_4_1 down (1)
+move_character loc_4_2 loc_5_2 right (0)
+move_character loc_5_2 loc_5_1 down (0)
+move_ball ball_1 loc_5_1 loc_4_1 loc_3_1 left (1)
+move_ball ball_1 loc_4_1 loc_3_1 loc_2_1 left (1)
+move_ball ball_1 loc_3_1 loc_2_1 loc_1_1 left (1)
+goal ball_0 ball_1 ball_2 loc_1_1 (0)
+[t=2.86967s, 135384 KB] Plan length: 34 step(s).
+[t=2.86967s, 135384 KB] Plan cost: 13
+[t=2.86967s, 135384 KB] Expanded 96984 state(s).
+[t=2.86967s, 135384 KB] Reopened 0 state(s).
+[t=2.86967s, 135384 KB] Evaluated 106223 state(s).
+[t=2.86967s, 135384 KB] Evaluations: 106223
+[t=2.86967s, 135384 KB] Generated 268867 state(s).
+[t=2.86967s, 135384 KB] Dead ends: 0 state(s).
+[t=2.86967s, 135384 KB] Expanded until last jump: 92691 state(s).
+[t=2.86967s, 135384 KB] Reopened until last jump: 0 state(s).
+[t=2.86967s, 135384 KB] Evaluated until last jump: 96665 state(s).
+[t=2.86967s, 135384 KB] Generated until last jump: 256006 state(s).
+[t=2.86967s, 135384 KB] Number of registered states: 106223
+[t=2.86967s, 135384 KB] Int hash set load factor: 106223/131072 = 0.810417
+[t=2.86967s, 135384 KB] Int hash set resizes: 17
+[t=2.86967s, 135384 KB] Search time: 1.51742s
+[t=2.86967s, 135384 KB] Total time: 2.86967s
+Solution found.
+Peak memory: 135384 KB
+exitcode: 0
+
+Exit codes: [34, 34, 34, 34, 0]
+Error: Unexpected exit codes: [34]
+Remove intermediate file output.sas
+search exit code: 34
+
+Driver aborting after search

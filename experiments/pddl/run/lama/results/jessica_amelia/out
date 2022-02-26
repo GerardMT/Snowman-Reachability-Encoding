@@ -1,0 +1,46 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 3599.95s
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 /lustre/home/sc061/jea20/git/downward/builds/release/bin/translate/translate.py ../../instances/jessica_amelia/domain.pddl ../../instances/jessica_amelia/problem.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.077s wall-clock]
+Normalizing task... [0.010s CPU, 0.002s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.060s wall-clock]
+Preparing model... [0.010s CPU, 0.004s wall-clock]
+Generated 157 rules.
+Computing model... [64.580s CPU, 64.784s wall-clock]
+4899297 relevant atoms
+12649 auxiliary atoms
+4911946 final queue length
+9818785 total queue pushes
+Completing instantiation... [80.950s CPU, 81.307s wall-clock]
+Instantiating: [148.630s CPU, 149.276s wall-clock]
+Computing fact groups...
+Finding invariants...
+16 initial candidates
+Finding invariants: [4.790s CPU, 4.813s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.000s CPU, 0.001s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.001s wall-clock]
+Choosing groups...
+995 uncovered facts
+Choosing groups: [0.000s CPU, 0.001s wall-clock]
+Building translation key... [0.000s CPU, 0.006s wall-clock]
+Computing fact groups: [4.810s CPU, 4.838s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.002s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.002s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.002s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.070s CPU, 0.075s wall-clock]
+Translator axioms removed by simplifying: 5056
+Computing negative axioms... [1508.320s CPU, 1516.451s wall-clock]
+Processing axioms: [1508.580s CPU, 1516.719s wall-clock]
+translate exit code: -9
+
+Driver aborting after translate

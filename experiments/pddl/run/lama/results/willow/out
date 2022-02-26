@@ -1,0 +1,154 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 3599.95s
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 /lustre/home/sc061/jea20/git/downward/builds/release/bin/translate/translate.py ../../instances/willow/domain.pddl ../../instances/willow/problem.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.085s wall-clock]
+Normalizing task... [0.000s CPU, 0.002s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.002s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.052s wall-clock]
+Preparing model... [0.000s CPU, 0.004s wall-clock]
+Generated 150 rules.
+Computing model... [0.150s CPU, 0.145s wall-clock]
+6390 relevant atoms
+5168 auxiliary atoms
+11558 final queue length
+26219 total queue pushes
+Completing instantiation... [0.200s CPU, 0.194s wall-clock]
+Instantiating: [0.360s CPU, 0.402s wall-clock]
+Computing fact groups...
+Finding invariants...
+16 initial candidates
+Finding invariants: [0.020s CPU, 0.016s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+746 uncovered facts
+Choosing groups: [0.000s CPU, 0.001s wall-clock]
+Building translation key... [0.000s CPU, 0.004s wall-clock]
+Computing fact groups: [0.030s CPU, 0.031s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.001s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.030s CPU, 0.031s wall-clock]
+Translator axioms removed by simplifying: 1235
+Computing negative axioms... [17.320s CPU, 17.383s wall-clock]
+Processing axioms: [17.400s CPU, 17.465s wall-clock]
+Translating task: [27.100s CPU, 27.197s wall-clock]
+874 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+60916 axioms removed
+470 propositions removed
+Detecting unreachable propositions: [2.710s CPU, 2.721s wall-clock]
+Reordering and filtering variables...
+520 of 520 variables necessary.
+0 of 9 mutex groups necessary.
+408 of 408 operators necessary.
+390121 of 390121 axiom rules necessary.
+Reordering and filtering variables: [1.660s CPU, 1.667s wall-clock]
+Translator variables: 520
+Translator derived variables: 414
+Translator facts: 1112
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 408
+Translator axioms: 390121
+Translator task size: 1491176
+Translator peak memory: 303632 KB
+Writing output... [4.300s CPU, 4.498s wall-clock]
+Done! [36.390s CPU, 36.831s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 3563.19s
+INFO     search memory limit: None
+INFO     search command line string: /lustre/home/sc061/jea20/git/downward/builds/release/bin/downward --if-unit-cost --evaluator 'hlm=lmcount(lm_reasonable_orders_hps(lm_rhw()),pref=false)' --evaluator 'hff=ff()' --search 'iterated([lazy_greedy([hff,hlm],preferred=[hff,hlm]),lazy_wastar([hff,hlm],preferred=[hff,hlm],w=5),lazy_wastar([hff,hlm],preferred=[hff,hlm],w=3),lazy_wastar([hff,hlm],preferred=[hff,hlm],w=2),lazy_wastar([hff,hlm],preferred=[hff,hlm],w=1)],repeat_last=true,continue_on_fail=true)' --if-non-unit-cost --evaluator 'hlm1=lmcount(lm_reasonable_orders_hps(lm_rhw()),transform=adapt_costs(one),pref=false)' --evaluator 'hff1=ff(transform=adapt_costs(one))' --evaluator 'hlm2=lmcount(lm_reasonable_orders_hps(lm_rhw()),transform=adapt_costs(plusone),pref=false)' --evaluator 'hff2=ff(transform=adapt_costs(plusone))' --search 'iterated([lazy_greedy([hff1,hlm1],preferred=[hff1,hlm1],cost_type=one,reopen_closed=false),lazy_greedy([hff2,hlm2],preferred=[hff2,hlm2],reopen_closed=false),lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=5),lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=3),lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=2),lazy_wastar([hff2,hlm2],preferred=[hff2,hlm2],w=1)],repeat_last=true,continue_on_fail=true)' --always --internal-plan-file sas_plan < output.sas
+[t=7.0599e-05s, 21972 KB] reading input...
+[t=1.04208s, 104300 KB] done reading input!
+[t=1.04422s, 104300 KB] Initializing landmark count heuristic...
+[t=1.04427s, 104300 KB] Generating landmark graph...
+[t=1.05629s, 105504 KB] Building a landmark graph with reasonable orders.
+[t=1.06828s, 107996 KB] Initializing Exploration...
+[t=1.25912s, 174444 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=1.35854s, 174444 KB] Landmarks generation time: 0.307407s
+[t=1.3638s, 174444 KB] Discovered 2 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=1.36384s, 174444 KB] 1 edges
+[t=1.36386s, 174444 KB] approx. reasonable orders
+[t=1.36388s, 174444 KB] approx. obedient reasonable orders
+[t=1.3639s, 174444 KB] Removed 0 reasonable or obedient reasonable orders
+[t=1.36392s, 174444 KB] Landmarks generation time: 0.319645s
+[t=1.36394s, 174444 KB] Discovered 2 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=1.36396s, 174444 KB] 1 edges
+[t=1.36397s, 174444 KB] Landmark graph generation time: 0.319722s
+[t=1.36399s, 174444 KB] Landmark graph contains 2 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=1.36401s, 174444 KB] Landmark graph contains 1 orderings.
+[t=1.44004s, 174444 KB] Simplifying 392419 unary operators... done! [391868 unary operators]
+[t=3.04097s, 174444 KB] time to simplify: 1.60104s
+[t=3.05348s, 174444 KB] Initializing additive heuristic...
+[t=3.05357s, 174444 KB] Initializing FF heuristic...
+[t=3.05373s, 174444 KB] Initializing landmark count heuristic...
+[t=3.05376s, 174444 KB] Generating landmark graph...
+[t=3.06609s, 174444 KB] Building a landmark graph with reasonable orders.
+[t=3.0785s, 174444 KB] Initializing Exploration...
+[t=3.23366s, 209136 KB] Generating landmarks using the RPG/SAS+ approach
+Removed 0 reasonable or obedient reasonable orders
+[t=3.31919s, 209136 KB] Landmarks generation time: 0.257664s
+[t=3.32386s, 209136 KB] Discovered 2 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=3.32389s, 209136 KB] 1 edges
+[t=3.32391s, 209136 KB] approx. reasonable orders
+[t=3.32393s, 209136 KB] approx. obedient reasonable orders
+[t=3.32395s, 209136 KB] Removed 0 reasonable or obedient reasonable orders
+[t=3.32397s, 209136 KB] Landmarks generation time: 0.2702s
+[t=3.32399s, 209136 KB] Discovered 2 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=3.324s, 209136 KB] 1 edges
+[t=3.32402s, 209136 KB] Landmark graph generation time: 0.27027s
+[t=3.32404s, 209136 KB] Landmark graph contains 2 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=3.32405s, 209136 KB] Landmark graph contains 1 orderings.
+[t=3.38978s, 209136 KB] Simplifying 392419 unary operators... done! [391868 unary operators]
+[t=5.06186s, 209136 KB] time to simplify: 1.67218s
+[t=5.07411s, 209136 KB] Initializing additive heuristic...
+[t=5.0742s, 209136 KB] Initializing FF heuristic...
+[t=5.0744s, 209136 KB] Building successor generator...done!
+[t=5.0748s, 209136 KB] peak memory difference for successor generator creation: 0 KB
+[t=5.07482s, 209136 KB] time for successor generation creation: 0.000324393s
+[t=5.07485s, 209136 KB] Variables: 520
+[t=5.07487s, 209136 KB] FactPairs: 1112
+[t=5.07489s, 209136 KB] Bytes per state: 68
+[t=5.07531s, 209136 KB] Building successor generator...done!
+[t=5.07538s, 209136 KB] peak memory difference for successor generator creation: 0 KB
+[t=5.07539s, 209136 KB] time for successor generation creation: 9.88e-07s
+[t=5.07542s, 209136 KB] Variables: 520
+[t=5.07543s, 209136 KB] FactPairs: 1112
+[t=5.07545s, 209136 KB] Bytes per state: 68
+[t=5.0755s, 209136 KB] Starting search: lazy_greedy(list(hff1, hlm1), preferred = list(hff1, hlm1), cost_type = one, reopen_closed = false)
+[t=5.07552s, 209136 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=5.07555s, 209136 KB] 1 initial landmarks, 1 goal landmarks
+[t=5.08355s, 209136 KB] New best heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), transform = adapt_costs(one), pref = false): 1
+[t=5.08361s, 209136 KB] New best heuristic value for ff(transform = adapt_costs(one)): 19
+[t=5.08364s, 209136 KB] g=0, 1 evaluated, 0 expanded
+[t=5.08368s, 209136 KB] Initial heuristic value for lmcount(lm_reasonable_orders_hps(lm_rhw), transform = adapt_costs(one), pref = false): 1
+[t=5.0837s, 209136 KB] Initial heuristic value for ff(transform = adapt_costs(one)): 19
+[t=5.25699s, 209136 KB] New best heuristic value for ff(transform = adapt_costs(one)): 16
+[t=5.25709s, 209136 KB] g=6, 26 evaluated, 25 expanded
+[t=5.5352s, 209136 KB] New best heuristic value for ff(transform = adapt_costs(one)): 12
+[t=5.5353s, 209136 KB] g=9, 53 evaluated, 52 expanded
+[t=5.56105s, 209136 KB] New best heuristic value for ff(transform = adapt_costs(one)): 11
+[t=5.56113s, 209136 KB] g=10, 55 evaluated, 54 expanded
+[t=8.19986s, 209136 KB] New best heuristic value for ff(transform = adapt_costs(one)): 10
+[t=8.19997s, 209136 KB] g=37, 355 evaluated, 354 expanded
+[t=15.1568s, 209136 KB] New best heuristic value for ff(transform = adapt_costs(one)): 8
+[t=15.157s, 209136 KB] g=48, 1130 evaluated, 1129 expanded
+[t=107.632s, 209136 KB] New best heuristic value for ff(transform = adapt_costs(one)): 6
+[t=107.632s, 209136 KB] g=56, 7999 evaluated, 7998 expanded
