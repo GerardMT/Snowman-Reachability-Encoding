@@ -17,7 +17,7 @@
 
 
 ## Notes about SAT/SMT experiments
-All SAT/SMT experiments require to have their respective SAT/SMT solver located inside its experiment folder. Inside each experiment folder you will find some empty file which specifies the required solvers. Replace these empty files (*kissat*, *limboole* and *yices-smt2*) with the actual solver executable (or a soft link).
+All SAT/SMT experiments require to have their respective SAT/SMT solver located inside its experiment folder. Inside each experiment folder you will find some empty files which specifies the required solvers. Replace these empty files (*kissat*, *limboole* and *yices-smt2*) with the actual solver executable (or a soft link).
 
 SAT experiments contain a folder named *original*. Inside this folder you will find a similar program which executes a single time step. With SMT, you can also execute a single time step with the Snowman Editor. 
 
@@ -27,9 +27,9 @@ To run the PDDL experiments, it is require to have the Fast Downward installed a
 
 
 ## Other notes
-To execute an experiment, execute the *run.sh* file located inside the experiment folder.
+To execute an experiment, execute the *run.sh* script located inside the experiment folder.
 
-To generate the summary tables, run the *run.sh* file. It will parse all experiments inside the upper run folder at once. Note that PDDL and SAT/SMT are independent from each other.
+To generate the summary tables, run the *run.sh* script. It will parse all experiments inside the upper run folder at once. Note that PDDL and SAT/SMT are independent from each other.
 
 
 ## Snowman Editor
